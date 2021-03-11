@@ -3,16 +3,21 @@ package tasks.first;
 public class FirstTaskSolution implements FirstTask {
     @Override
     public String breadthFirst(boolean[][] adjacencyMatrix, int startIndex) {
-        return null;
+        Graph graph = new Graph();
+        return graph.breadthFirst(adjacencyMatrix, startIndex);
     }
 
     @Override
     public Boolean validateBrackets(String s) {
-        return null;
+        BracketsManager bracketsManager = new BracketsManager();
+
+        return bracketsManager.checkValidity(s);
     }
 
     @Override
     public Long polishCalculation(String s) {
-        return null;
+        PolishNotationCalculator polishNotationCalculator = new PolishNotationCalculator();
+
+        return polishNotationCalculator.reverseCalculator(s);
     }
 }
